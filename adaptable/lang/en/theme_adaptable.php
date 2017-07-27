@@ -882,6 +882,10 @@ $string['favicondesc'] = 'Upload a favicon for use on your site,';
 $string['enableavailablecourses'] = 'Display "Available Courses"';
 $string['enableavailablecoursesdesc'] = 'Display "Available Courses" text in the frontpage';
 
+$string['thiscourse'] = 'This course';
+
+$string['loadtime'] = 'Page loaded in';
+
 $string['loadingcolor'] = 'Loading colour';
 $string['loadingcolordesc'] = 'The loading bar colour in the top of the page';
 
@@ -1422,37 +1426,3 @@ $string['show'] = 'Show';
 
 // Navbar Links menu *********************************.
 $string['linksmenu'] = 'Links Menu';
-
-
-// Menu
-$string['menusettings'] = 'Menu settings';
-$string['coursemanagementtoggle'] = 'Show Student and Teacher Dashboard Panels';
-$string['coursemanagementtoggle_desc'] = 'This displays an easy to use sliding panel for teachers to manage their course. It will also display a course overview panel for students with grades, course completion, and other items from the course.';
-
-$string['showstudentgrades'] = 'Show Student Grades';
-$string['showstudentgrades_desc'] = 'Show student gradebook link in student dashboard panel.  Even with this checked the course must have Show Student Grades turned on in order to display.';
-
-$string['courseeditingcog'] = 'Show Default Course Settings Menu';
-$string['courseeditingcog_desc'] = 'If using the Course Management Panel the default menu is hidden.  By checking this you can show the default menu as well as the teacher course management panel. This is ideal if using a third party plugin which uses the course menu for access to settings.';
-$string['configtitle'] = 'Adaptable';
-$string['menudesc'] = 'Allows you to modify the menu panel';
-
-//teacher and student dashboard slider
-$string['thiscourse'] = 'This course';
-$string['studentdashbutton'] = 'This Course';
-$string['loadtime'] = 'Page loaded in';
-$string['userlinks'] = 'User Links';
-$string['userlinks_desc'] = 'Manage your students';
-$string['qbank'] = 'Question Bank';
-$string['qbank_desc'] = 'Create and organize quiz questions';
-$string['badges'] = 'Badges';
-$string['badges_desc'] = 'Award your students';
-$string['coursemanage'] = 'Course Settings';
-$string['coursemanage_desc'] = 'Manage your entire course';
-$string['coursemanagementbutton'] = 'Course Management';
-$string['courseinfo'] = 'Course Description';
-$string['coursestaff'] = 'Course Teachers';
-$string['activitylinkstitle'] = 'Activities';
-$string['activitylinkstitle_desc'] = 'View All Activities in Course';
-$string['myprogresstext'] = 'My Progress';
-$string['mygradestext'] = 'My Grades';

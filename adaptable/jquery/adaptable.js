@@ -136,54 +136,6 @@ jQuery(document).ready(function($) {
             M.util.set_user_preference('theme_adaptable_zoom', 'zoomin');
         }
     });
-    // Add a 'plus' button in the moodle chooser
-    if($('.options').length == 1){
-        var afterTitle;
-        var nb=0;
-        var btnHtml;
-
-        $('.options > .alloptions > div').each(function(){
-            if($(this).is(".moduletypetitle")){
-                afterTitle = 0;
-                nb++;
-            }
-            if($(this).is(".option")){
-                afterTitle++;
-                if(afterTitle>=4){
-                    if(nb==1) 
-                        $(this).detach().appendTo($('#activities'));
-                    else $(this).detach().appendTo($('#ressources'));
-                }
-            }
-            if(afterTitle==3){
-                btnHtml= '<div class="option plus'+nb+'">'+
-                    '<label>'+
-                        '<a role="button" href="#" class="btn btn-primary">'+
-                            '<p>Plus</p>'+
-                        '</a>'+
-                    '</label>'+
-                '</div>';
-                $(btnHtml).insertAfter($(this));
-                if(nb==1)
-                    $("#activities").insertAfter('.option.plus1');
-                else $("#ressources").insertAfter('.option.plus2');
-            }
-        });
-        window.nb = nb;
-    }
-    //on click show/hide the ressources/activities
-    for(let i = 0; i<nb+1;i++){
-        $(document).on('click','.option.plus'+i,function(){
-            var bool = true;
-            if($('.option.plus'+i+' > label > a > p').html()=="Plus"){
-                $('.option.plus'+i+' > label > a > p').html("Moins");
-                if(i==1)$("#activities").show(1000);
-                else if(i==2)$("#ressources").show(1000);
-            }else{
-                $('.option.plus'+i+' > label > a > p').html("Plus");
-                if(i==1)$("#activities").hide(1000);
-                else if(i==2) $("#ressources").hide(1000);
-            }
-        });
-    }
 });
+
+

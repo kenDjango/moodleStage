@@ -29,7 +29,7 @@ defined('MOODLE_INTERNAL') || die;
 require_once(__DIR__.'/libs/admin_confightmleditor.php');
 require_once(__DIR__.'/lib.php');
 
-/*$settings = new theme_boost_admin_settingspage_tabs('themesettingadaptable', get_string('configtitle', 'theme_adaptable'));*/
+$settings = null;
 
 if (is_siteadmin()) {
     // Adaptable theme settings page.
@@ -60,5 +60,4 @@ if (is_siteadmin()) {
     include(dirname(__FILE__) . '/settings/mobile_settings.php');
     include(dirname(__FILE__) . '/settings/analytics.php');
     include(dirname(__FILE__) . '/settings/custom_css.php');
-    include(dirname(__FILE__) . '/settings/teacher_menu.php');
 }

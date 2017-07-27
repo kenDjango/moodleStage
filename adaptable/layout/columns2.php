@@ -42,8 +42,6 @@ $regions = theme_adaptable_grid($left, $hassidepost);
 ?>
 
 <div class="container outercont">
-
-<?php echo $OUTPUT->teacherdash();?>
     <div id="page-content" class="row-fluid">
         <?php echo $OUTPUT->page_navbar(false); ?>
 
