@@ -63,7 +63,8 @@ $THEME->sheets = array( 'adaptable',
                         'extras',
                         'menu',
                         'responsive',
-                        'custom');
+                        'custom',
+                        'bootstrap-grid');
 
 $THEME->supportscssoptimisation = false;
 $THEME->yuicssmodules = array();
