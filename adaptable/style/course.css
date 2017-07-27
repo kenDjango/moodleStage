@@ -636,3 +636,96 @@ div.fdescription.required {
   text-transform: uppercase;
   font-style: normal;
 }
+
+
+/*Part of the css dedicated to the teacher dashbord*/
+#coursecontrols {
+  margin-top: 20px;
+}
+
+.teacherdashboard {
+    padding: 1rem;
+}
+.teacherdashboard i.dashicon {
+    float:left;
+    padding: 0px 4px;
+}
+
+.list-group-item {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.list-group-item:first-child {
+  border-top-right-radius: 0.25rem;
+  border-top-left-radius: 0.25rem;
+}
+
+.list-group-item:last-child {
+  margin-bottom: 0;
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.list-group-item:focus, .list-group-item:hover {
+  text-decoration: none;
+}
+
+.list-group-item.disabled, .list-group-item:disabled {
+  color: #636c72;
+  cursor: not-allowed;
+  background-color: #fff;
+}
+
+.list-group-item.disabled .list-group-item-heading, .list-group-item:disabled .list-group-item-heading {
+  color: inherit;
+}
+
+.list-group-item.disabled .list-group-item-text, .list-group-item:disabled .list-group-item-text {
+  color: #636c72;
+}
+
+.list-group-item.active {
+  z-index: 2;
+  color: #fff;
+  background-color: #0275d8;
+  border-color: #0275d8;
+}
+
+.list-group-item.active .list-group-item-heading,
+.list-group-item.active .list-group-item-heading > small,
+.list-group-item.active .list-group-item-heading > .small {
+  color: inherit;
+}
+
+.list-group-item.active .list-group-item-text {
+  color: #daeeff;
+}
+
+.list-group-flush .list-group-item {
+  border-right: 0;
+  border-left: 0;
+  border-radius: 0;
+}
+
+.list-group-flush:first-child .list-group-item:first-child {
+  border-top: 0;
+}
+
+.list-group-flush:last-child .list-group-item:last-child {
+  border-bottom: 0;
+}

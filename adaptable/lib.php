@@ -26,6 +26,8 @@
 
 defined('MOODLE_INTERNAL') || die;
 
+require('lib/adaptable_lib.php');
+
 define('THEME_ADAPTABLE_DEFAULT_ALERTCOUNT', '1');
 define('THEME_ADAPTABLE_DEFAULT_ANALYTICSCOUNT', '1');
 define('THEME_ADAPTABLE_DEFAULT_TOPMENUSCOUNT', '1');
